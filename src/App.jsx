@@ -36,7 +36,7 @@ const App = () => {
             <ControlImage src={ImageControl} alt='control-image' />
           </ControlContainer1>
         </Container>
-        <SplineContainer>
+        <SplineContainer isOpen={isOpen}>
           <Header />
           <CloseButton />
           <SplineScene />
