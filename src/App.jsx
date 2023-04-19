@@ -4,6 +4,7 @@ import Logo from './components/Logo';
 import DownloadButton from './components/DownloadButton';
 import PlayButton from './components/PlayButton';
 import * as TextStyles from './utils/TextStyles';
+import DownloadFile from './smart_home_final.spline.zip';
 
 const App = () => {
   return (
@@ -19,7 +20,9 @@ const App = () => {
         </Description>
       </TextContainer>
       <ButtonContainer>
-        <DownloadButton />
+        <a href={DownloadFile} target='_blank' rel='noreferrer'>
+          <DownloadButton />
+        </a>
         <PlayButton />
       </ButtonContainer>
     </Wrapper>
