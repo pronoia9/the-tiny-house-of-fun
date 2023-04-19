@@ -1,15 +1,9 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import Logo from './components/Logo';
-import DownloadButton from './components/DownloadButton';
-import PlayButton from './components/PlayButton';
-import Header from './components/Header';
-import CloseButton from './components/CloseButton';
-import SplineScene from './components/SplineScene';
-import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, ControlContainer2, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
+import { CloseButton, Controls, DownloadButton, Header, Logo, PlayButton, SplineScene } from './components';
+import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
 import DownloadFile from './smart_home_final.spline.zip';
-import ImageControl from './images/controls.png';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,10 +28,7 @@ const App = () => {
 
           <GradientLine />
 
-          <ControlContainer1>
-            <Subtitle>Keyboard Key</Subtitle>
-            <ControlImage src={ImageControl} alt='control-image' />
-          </ControlContainer1>
+          <Controls mobile={false} />
         </Container>
 
         <SplineContainer isOpen={isOpen}>
@@ -46,10 +37,7 @@ const App = () => {
           <SplineScene />
         </SplineContainer>
 
-        <ControlContainer2>
-          <Subtitle>Keyboard Key</Subtitle>
-          <ControlImage src={ImageControl} alt='control-image' />
-        </ControlContainer2>
+        <Controls mobile={true} />
       </ContentWrapper>
     </Wrapper>
   );
