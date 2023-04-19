@@ -1,6 +1,7 @@
 import Logo from './components/Logo';
 import './styles.css';
 import styled from 'styled-components';
+import * as TextStyles from './utils/TextStyles'
 
 const App = () => {
   return (
@@ -23,3 +24,7 @@ const LogoContainer = styled.div`
   top: 44px;
   left: 0px;
 `;
+
+const TextContainer = styled.div``;
+
+const Title = styled(TextStyles.H1)``;
