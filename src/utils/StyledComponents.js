@@ -11,6 +11,10 @@ const TextContainer = styled.div`
   gap: 24px;
   max-width: 460px;
   padding: 225px 0px 0px 56px;
+
+  @media (max-width: 560px) {
+    padding: 145px 20px 0px;
+  }
 `;
 
 const Title = styled(TextStyles.H1)``;
@@ -41,6 +45,15 @@ const ButtonContainer = styled.div`
   a {
     text-decoration: none;
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding: 32px 20px;
+    margin-top: 40px;
+  }
 `;
 
 const GradientLine = styled.div`
@@ -56,9 +69,9 @@ const GradientLine = styled.div`
 const ControlContainer1 = styled.div`
   display: block;
 
-   @media (max-width: 1400px) {
+  @media (max-width: 1400px) {
     display: none;
-   }
+  }
 `;
 
 const ControlContainer2 = styled.div`
@@ -73,11 +86,19 @@ const Subtitle = styled(TextStyles.BodyMain)`
   color: rgba(0, 0, 0, 0.6);
   margin-top: 14px;
   padding-left: 56px;
+
+  @media (max-width: 560px) {
+    padding: 8px 20px;
+  }
 `;
 
 const ControlImage = styled.img`
   max-width: 326px;
   padding: 14px 0px 0px 56px;
+
+  @media (max-width: 560px) {
+    padding: 8px 20px;
+  }
 `;
 
 const ContentWrapper = styled.div`
