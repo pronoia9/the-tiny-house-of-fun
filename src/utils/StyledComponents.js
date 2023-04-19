@@ -78,7 +78,12 @@ const Container = styled.div`
 
 const SplineContainer = styled.div`
   position: ${(props) => (props = props.isOpen ? 'fixed' : 'relative')};
-  padding: 24px 20px 24px 0px;
+  padding: ${(props) => (props = props.isOpen ? '0px' : '24px 20px 24px 0px')};
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
 
   .closeButton {
     top: 52%;
