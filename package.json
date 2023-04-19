@@ -1,5 +1,5 @@
 {
-  "name": "dc-spline-template",
+  "name": "the-tiny-house-of-fun",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --openssl-legacy-provider start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
