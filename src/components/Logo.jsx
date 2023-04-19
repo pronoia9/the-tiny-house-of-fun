@@ -1,20 +1,17 @@
 import styled from 'styled-components';
-
 import * as TextStyles from '../utils/TextStyles';
 
-const Logo = () => {
-  return (
-    <LogoContainer>
-      <Wrapper>
-        <Container>
-          <Title>
-            Spline <span>Room</span>
-          </Title>
-        </Container>
-      </Wrapper>
-    </LogoContainer>
-  );
-};
+const Logo = () => (
+  <LogoContainer className='logo__container'>
+    <Wrapper className='logo__wrapper'>
+      <Container className='logo__title__container'>
+        <Title className='logo__title'>
+          Spline <span className='logo__span'>Room</span>
+        </Title>
+      </Container>
+    </Wrapper>
+  </LogoContainer>
+);
 
 export default Logo;
 

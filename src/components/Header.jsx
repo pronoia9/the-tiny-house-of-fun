@@ -1,20 +1,22 @@
 import styled from 'styled-components';
-
 import CourseButton from './CourseButton';
 import * as TextStyles from '../utils/TextStyles';
 
-const Header = () => {
-  return (
-    <Wrapper>
-      <a href='https://designcode.io/' target='_blank' rel='noreferrer'>
-        <Caption>login</Caption>
-      </a>
-      <a href='https://designcode.io/spline2-game-controls' target='_blank' rel='noreferrer'>
-        <CourseButton title='take course' />
-      </a>
-    </Wrapper>
-  );
-};
+const Header = () => (
+  <Wrapper className='header__wrapper'>
+    <a className='header__link' href='https://designcode.io/' target='_blank' rel='noreferrer'>
+      <Caption className='header__caption'>Login</Caption>
+    </a>
+    <a
+      className='header__link'
+      href='https://designcode.io/spline2-game-controls'
+      target='_blank'
+      rel='noreferrer'
+    >
+      <CourseButton title='take course' />
+    </a>
+  </Wrapper>
+);
 
 export default Header;
 

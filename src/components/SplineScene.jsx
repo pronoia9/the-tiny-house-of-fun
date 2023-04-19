@@ -1,13 +1,15 @@
-import Spline from "@splinetool/react-spline";
-import styled from "styled-components";
+import Spline from '@splinetool/react-spline';
+import styled from 'styled-components';
 
-export default function App() {
-  return (
-    <Wrapper>
-      <Spline className='spline' scene='https://prod.spline.design/FAgC4ymjPdH08LIp/scene.splinecode' />
-    </Wrapper>
-  );
-}
+const SplineScene = () => (
+  <Wrapper className='spline__wrapper'>
+    <Spline
+      className='spline__scene spline'
+      scene='https://prod.spline.design/FAgC4ymjPdH08LIp/scene.splinecode'
+    />
+  </Wrapper>
+);
+export default SplineScene;
 
 const Wrapper = styled.div`
   width: 100%;

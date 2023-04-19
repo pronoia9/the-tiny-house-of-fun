@@ -1,17 +1,13 @@
 import styled from 'styled-components';
-
 import ButtonImage from '../assets/close-button.png';
 import CloseIcon from '../assets/close-icon.png';
 
-const CloseButton = (props) => {
-  const { isOpen, onClick } = props;
-  return (
-    <Wrapper className='closeButton' isOpen={isOpen}>
-      <Image src={ButtonImage} alt='close-button' />
-      {isOpen && <Icon onClick={onClick} src={CloseIcon} alt='close-icon' />}
-    </Wrapper>
-  );
-};
+const CloseButton = ({ isOpen, onClick }) => (
+  <Wrapper className='close-button__wrapper closeButton' isOpen={isOpen}>
+    <Image className='close-button__image' src={ButtonImage} alt='close-button' />
+    {isOpen && <Icon className='close-button__icon' onClick={onClick} src={CloseIcon} alt='close-icon' />}
+  </Wrapper>
+);
 
 export default CloseButton;
 

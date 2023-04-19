@@ -1,17 +1,14 @@
 import styled from 'styled-components';
-
 import * as TextStyles from '../utils/TextStyles';
 
-const DownloadButton = ({ file }) => {
-  return (
-    <a href={file} target='_blank' rel='noreferrer'>
-      <Wrapper>
-        <Circle />
-        <Title>Download</Title>
-      </Wrapper>
-    </a>
-  );
-};
+const DownloadButton = ({ file }) => (
+  <a className='download-button__link' href={file} target='_blank' rel='noreferrer'>
+    <Wrapper className='download-button__wrapper'>
+      <Circle className='download-button__circle' />
+      <Title className='download-button__title'>Download</Title>
+    </Wrapper>
+  </a>
+);
 
 export default DownloadButton;
 

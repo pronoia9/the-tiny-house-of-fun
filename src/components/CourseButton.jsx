@@ -1,16 +1,11 @@
 import styled from 'styled-components';
-
 import * as TextStyles from '../utils/TextStyles';
 
-const CourseButton = (props) => {
-  const { title } = props;
-
-  return (
-    <Wrapper>
-      <Title>{title}</Title>
-    </Wrapper>
-  );
-};
+const CourseButton = ({ title }) => (
+  <Wrapper className='course-button__wrapper'>
+    <Title className='course-button__title'>{title}</Title>
+  </Wrapper>
+);
 
 export default CourseButton;
 

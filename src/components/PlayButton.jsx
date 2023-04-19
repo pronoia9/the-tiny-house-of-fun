@@ -1,20 +1,16 @@
 import styled from 'styled-components';
-
 import * as TextStyles from '../utils/TextStyles';
 
-const PlayButton = (props) => {
-
-  return (
-    <Wrapper onClick={props.onClick}>
-      <Container>
-        <Circle>
-          <MiniCircle />
-        </Circle>
-        <Title>Play Game</Title>
-      </Container>
-    </Wrapper>
-  );
-};
+const PlayButton = (props) => (
+  <Wrapper className='play-button__wrapper' onClick={props.onClick}>
+    <Container className='play-button__container'>
+      <Circle className='play-button__circle'>
+        <MiniCircle className='play-button__circle-mini' />
+      </Circle>
+      <Title className='play-button__title'>Play Game</Title>
+    </Container>
+  </Wrapper>
+);
 
 export default PlayButton;
 
