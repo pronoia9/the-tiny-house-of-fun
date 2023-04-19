@@ -72,4 +72,8 @@ const ButtonContainer = styled.div`
   mix-blend-mode: normal;
   padding: 40px 0px 40px 56px;
   margin-top: 53px;
+
+  a {
+    text-decoration: none;
+  }
 `;
