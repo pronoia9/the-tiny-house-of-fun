@@ -1,7 +1,7 @@
 import Logo from './components/Logo';
-import './styles.css';
-import styled from 'styled-components';
+import DownloadButton from './components/DownloadButton';
 import * as TextStyles from './utils/TextStyles';
+import styled from 'styled-components';
 
 const App = () => {
   return (
@@ -16,6 +16,8 @@ const App = () => {
           and dark mode state.
         </Description>
       </TextContainer>
+      <ButtonContainer>
+      </ButtonContainer>
     </Wrapper>
   );
 };
@@ -53,3 +55,5 @@ const Description = styled.p`
   color: rgba(0, 0, 0, 0.6);
   margin: 0;
 `;
+
+const ButtonContainer = () => {}
