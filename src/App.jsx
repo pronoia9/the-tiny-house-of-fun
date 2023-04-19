@@ -1,12 +1,6 @@
 import { useState } from 'react';
 
-import CloseButton from './components/CloseButton';
-import Controls from './components/Controls';
-import DownloadButton from './components/DownloadButton';
-import Header from './components/Header';
-import Logo from './components/Logo';
-import PlayButton from './components/PlayButton';
-import SplineScene from './components/SplineScene';
+import { CloseButton, Controls, DownloadButton, Header, Logo, PlayButton, SplineScene } from './components';
 import DownloadFile from './files/the_tiny_house_of_fun.spline.zip';
 import './App.scss';
 
