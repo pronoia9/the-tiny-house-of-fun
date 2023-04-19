@@ -7,7 +7,7 @@ import PlayButton from './components/PlayButton';
 import Header from './components/Header';
 import CloseButton from './components/CloseButton';
 import SplineScene from './components/SplineScene';
-import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
+import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, ControlContainer2, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
 import DownloadFile from './smart_home_final.spline.zip';
 import ImageControl from './images/controls.png';
 
@@ -26,21 +26,30 @@ const App = () => {
               events and dark mode state.
             </Description>
           </TextContainer>
+
           <ButtonContainer>
             <DownloadButton file={DownloadFile} />
             <PlayButton onClick={() => setIsOpen(true)} />
           </ButtonContainer>
+
           <GradientLine />
+
           <ControlContainer1>
             <Subtitle>Keyboard Key</Subtitle>
             <ControlImage src={ImageControl} alt='control-image' />
           </ControlContainer1>
         </Container>
+
         <SplineContainer isOpen={isOpen}>
           <Header />
           <CloseButton isOpen={isOpen} onClick={() => setIsOpen(false)} />
           <SplineScene />
         </SplineContainer>
+
+        <ControlContainer2>
+          <Subtitle>Keyboard Key</Subtitle>
+          <ControlImage src={ImageControl} alt='control-image' />
+        </ControlContainer2>
       </ContentWrapper>
     </Wrapper>
   );
