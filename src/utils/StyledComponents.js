@@ -85,6 +85,10 @@ const SplineContainer = styled.div`
   right: 0;
   overflow: auto;
 
+  .spline {
+    border-radius: ${(props) => (props = props.isOpen ? '0px' : '20px')};
+  }
+
   .closeButton {
     top: 52%;
     left: -32px;
