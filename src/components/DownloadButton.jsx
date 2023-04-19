@@ -1,17 +1,16 @@
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import * as TextStyles from '../utils/TextStyles';
+import * as TextStyles from "../TextStyles";
 
-const DownloadButton = ({ file }) => {
+function DownloadButton() {
   return (
-    <a href={file} target='_blank' rel='noreferrer'>
-      <Wrapper>
-        <Circle />
-        <Title>Download</Title>
-      </Wrapper>
-    </a>
+    <Wrapper>
+      <Circle />
+      <Title>Download</Title>
+    </Wrapper>
   );
-};
+}
 
 export default DownloadButton;
 

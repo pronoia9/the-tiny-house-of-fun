@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import * as TextStyles from '../utils/TextStyles';
+import * as TextStyles from "../TextStyles";
 
-const CourseButton = (props) => {
+function CourseButton(props) {
   const { title } = props;
 
   return (
@@ -10,7 +11,7 @@ const CourseButton = (props) => {
       <Title>{title}</Title>
     </Wrapper>
   );
-};
+}
 
 export default CourseButton;
 

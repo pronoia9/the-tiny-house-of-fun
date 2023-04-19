@@ -1,11 +1,13 @@
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import * as TextStyles from '../utils/TextStyles';
+import * as TextStyles from "../TextStyles";
 
-const PlayButton = (props) => {
+function PlayButton(props) {
+  const { onClick } = props;
 
   return (
-    <Wrapper onClick={props.onClick}>
+    <Wrapper onClick={onClick}>
       <Container>
         <Circle>
           <MiniCircle />
@@ -14,13 +16,17 @@ const PlayButton = (props) => {
       </Container>
     </Wrapper>
   );
-};
+}
 
 export default PlayButton;
 
 const Wrapper = styled.div`
   width: 210px;
-  background: linear-gradient(180deg, rgba(153, 160, 169, 0.5) 0%, #ffffff 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(153, 160, 169, 0.5) 0%,
+    #ffffff 100%
+  );
   box-shadow: 4px 4px 20px rgba(142, 155, 174, 0.1);
   border-radius: 30px;
   padding: 4px 5px;
@@ -36,11 +42,16 @@ const Container = styled.div`
   display: flex;
   gap: 12px;
   background: linear-gradient(180deg, #734ee0 0%, #573ad9 92.5%);
-  box-shadow: 0px 8px 10px rgba(95, 64, 220, 0.2), inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 8px 10px rgba(95, 64, 220, 0.2),
+    inset 0px 2px 4px rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   padding: 8px;
   border: 0.5px solid;
-  border-image-source: linear-gradient(143.97deg, rgba(0, 0, 0, 0.3) 20.26%, rgba(0, 0, 0, 0.4) 85.18%);
+  border-image-source: linear-gradient(
+    143.97deg,
+    rgba(0, 0, 0, 0.3) 20.26%,
+    rgba(0, 0, 0, 0.4) 85.18%
+  );
 `;
 
 const Circle = styled.div`

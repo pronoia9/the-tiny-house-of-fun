@@ -4,7 +4,10 @@ import styled from "styled-components";
 export default function App() {
   return (
     <Wrapper>
-      <Spline className='spline' scene='https://prod.spline.design/FAgC4ymjPdH08LIp/scene.splinecode' />
+      <Spline
+        className="spline"
+        scene="https://prod.spline.design/Mx46ejRSLdujDMFo/scene.splinecode"
+      />
     </Wrapper>
   );
 }

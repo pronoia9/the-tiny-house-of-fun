@@ -1,2 +1,0 @@
-# tineasd
-Created with CodeSandbox
