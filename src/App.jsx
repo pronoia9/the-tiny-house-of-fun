@@ -5,6 +5,7 @@ import DownloadButton from './components/DownloadButton';
 import PlayButton from './components/PlayButton';
 import * as TextStyles from './utils/TextStyles';
 import DownloadFile from './smart_home_final.spline.zip';
+import ImageControl from './images/controls.png';
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
         <PlayButton />
       </ButtonContainer>
       <GradientLine />
+      <ControlContainer1>
+        <Subtitle>Keyboard Key</Subtitle>
+        <ControlImage src={ImageControl} alt='control-image' />
+      </ControlContainer1>
     </Wrapper>
   );
 };
@@ -83,4 +88,19 @@ const GradientLine = styled.div`
   width: 100%;
   height: 48px;
   background: linear-gradient(185deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 50%);
+`;
+
+const ControlContainer1 = styled.div`
+  display: block;
+`;
+
+const Subtitle = styled(TextStyles.BodyMain)`
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 14px;
+  padding-left: 56px;
+`;
+
+const ControlImage = styled.img`
+  max-width: 326px;
+  padding: 14px 0px 0px 56px;
 `;
