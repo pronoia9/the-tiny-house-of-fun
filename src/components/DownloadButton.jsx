@@ -1,4 +1,4 @@
-import './DownloadButton.css';
+import './DownloadButton.scss';
 
 const DownloadButton = ({ file }) => {
   return (
