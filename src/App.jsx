@@ -10,28 +10,28 @@ const App = () => {
 
   return (
     <Wrapper className='app__wrapper'>
-      <Logo />
-      <ContentWrapper>
-        <Container>
-          <TextContainer>
-            <Title>3D Room with Game Controls</Title>
-            <Description>
+      <Logo className='logo__component' />
+      <ContentWrapper className='app__content__wrapper' >
+        <Container className='app__container'>
+          <TextContainer className='text__container'>
+            <Title className='text__title'>3D Room with Game Controls</Title>
+            <Description className='text__description'>
               Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse
               events and dark mode state.
             </Description>
           </TextContainer>
 
-          <ButtonContainer>
+          <ButtonContainer className='buttons__container'>
             <DownloadButton file={DownloadFile} />
             <PlayButton onClick={() => setIsOpen(true)} />
           </ButtonContainer>
 
-          <GradientLine />
+          <GradientLine className='gradient__line' />
 
           <Controls mobile={false} />
         </Container>
 
-        <SplineContainer isOpen={isOpen}>
+        <SplineContainer className='spline__container' isOpen={isOpen}>
           <Header />
           <CloseButton isOpen={isOpen} onClick={() => setIsOpen(false)} />
           <SplineScene />
