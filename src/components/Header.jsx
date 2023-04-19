@@ -1,25 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import * as TextStyles from "../TextStyles";
+import styled from 'styled-components';
 
-import CourseButton from "./CourseButton";
+import CourseButton from './CourseButton';
+import * as TextStyles from '../utils/TextStyles';
 
-function Header() {
+const Header = () => {
   return (
     <Wrapper>
-      <a href="https://designcode.io/" target="_blank" rel="noreferrer">
+      <a href='https://designcode.io/' target='_blank' rel='noreferrer'>
         <Caption>login</Caption>
       </a>
-      <a
-        href="https://designcode.io/spline2-game-controls"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <CourseButton title="take course" />
+      <a href='https://designcode.io/spline2-game-controls' target='_blank' rel='noreferrer'>
+        <CourseButton title='take course' />
       </a>
     </Wrapper>
   );
-}
+};
 
 export default Header;
 
