@@ -76,6 +76,16 @@ const Container = styled.div`
   position: relative;
 `;
 
+const SplineContainer = styled.div`
+  position: relative;
+  padding: 24px 20px 24px 0px;
+
+  .closeButton {
+    top: 52%;
+    left: -32px;
+  } 
+`;
+
 export {
   Wrapper,
   TextContainer,
@@ -88,4 +98,5 @@ export {
   ControlImage,
   ContentWrapper,
   Container,
+  SplineContainer,
 };
