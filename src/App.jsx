@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import Logo from './components/Logo';
 import DownloadButton from './components/DownloadButton';
 import PlayButton from './components/PlayButton';
-import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, Subtitle, ControlImage, ContentWrapper, Container, } from './utils/StyledComponents';
+import Header from './components/Header';
+import CloseButton from './components/CloseButton';
+import SplineScene from './components/SplineScene';
+import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer } from './utils/StyledComponents';
 import DownloadFile from './smart_home_final.spline.zip';
 import ImageControl from './images/controls.png';
 
@@ -30,6 +33,11 @@ const App = () => {
             <ControlImage src={ImageControl} alt='control-image' />
           </ControlContainer1>
         </Container>
+        <SplineContainer>
+          <Header />
+          <CloseButton />
+          <SplineScene />
+        </SplineContainer>
       </ContentWrapper>
     </Wrapper>
   );
