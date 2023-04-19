@@ -9,7 +9,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Wrapper className='App'>
+    <Wrapper className='app__wrapper'>
       <Logo />
       <ContentWrapper>
         <Container>
