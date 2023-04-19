@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { CloseButton, Controls, DownloadButton, Header, Logo, PlayButton, SplineScene } from './components';
 import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
-import DownloadFile from './smart_home_final.spline.zip';
+import DownloadFile from './files/the_tiny_house_of_fun.spline.zip';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
