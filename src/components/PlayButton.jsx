@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 import * as TextStyles from '../utils/TextStyles';
 
-const PlayButton = ({ onClick }) => {
+const PlayButton = (props) => {
 
   return (
-    <Wrapper onClick={onClick}>
+    <Wrapper onClick={props.onClick}>
       <Container>
         <Circle>
           <MiniCircle />
