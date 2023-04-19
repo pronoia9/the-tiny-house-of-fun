@@ -47,10 +47,18 @@ const GradientLine = styled.div`
   width: 100%;
   height: 48px;
   background: linear-gradient(185deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 50%);
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
 `;
 
 const ControlContainer1 = styled.div`
   display: block;
+
+   @media (max-width: 1400px) {
+    display: none;
+   }
 `;
 
 const Subtitle = styled(TextStyles.BodyMain)`
@@ -70,6 +78,12 @@ const ContentWrapper = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding-bottom: 40px;
+  }
 `;
 
 const Container = styled.div`
@@ -92,6 +106,17 @@ const SplineContainer = styled.div`
   .closeButton {
     top: 52%;
     left: -32px;
+  }
+
+  @media (max-width: 1400px) {
+    padding: ${(props) => (props.isOpen ? '0px' : '0px 20px 10px')};
+
+    .closeButton {
+      top: -44px;
+      left: 50%;
+      margin-left: -50px;
+      transform: rotate(90deg);
+    }
   }
 `;
 
