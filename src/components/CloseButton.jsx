@@ -1,18 +1,17 @@
-import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import ButtonImage from "../images/close-button.png";
-import CloseIcon from "../images/close-icon.png";
+import ButtonImage from '../images/close-button.png';
+import CloseIcon from '../images/close-icon.png';
 
-function CloseButton(props) {
+const CloseButton = (props) => {
   const { isOpen, onClick } = props;
   return (
-    <Wrapper className="closeButton" isOpen={isOpen}>
-      <Image src={ButtonImage} alt="close-button" />
-      {isOpen && <Icon onClick={onClick} src={CloseIcon} alt="close-icon" />}
+    <Wrapper className='closeButton' isOpen={isOpen}>
+      <Image src={ButtonImage} alt='close-button' />
+      {isOpen && <Icon onClick={onClick} src={CloseIcon} alt='close-icon' />}
     </Wrapper>
   );
-}
+};
 
 export default CloseButton;
 
