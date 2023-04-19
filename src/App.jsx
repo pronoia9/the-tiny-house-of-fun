@@ -10,9 +10,9 @@ import ImageControl from './images/controls.png';
 const App = () => {
   return (
     <Wrapper className='App'>
-      <LogoContainer>
+
         <Logo />
-      </LogoContainer>
+
       <Container>
         <TextContainer>
           <Title>3D Room with Game Controls</Title>
@@ -41,12 +41,6 @@ export default App;
 const Wrapper = styled.div`
   width: 100%;
   overflow: hidden;
-`;
-
-const LogoContainer = styled.div`
-  position: absolute;
-  top: 44px;
-  left: 0px;
 `;
 
 const TextContainer = styled.div`

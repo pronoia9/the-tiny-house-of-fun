@@ -4,13 +4,15 @@ import * as TextStyles from '../utils/TextStyles';
 
 const Logo = () => {
   return (
-    <Wrapper>
-      <Container>
-        <Title>
-          Spline <span>Room</span>
-        </Title>
-      </Container>
-    </Wrapper>
+    <LogoContainer>
+      <Wrapper>
+        <Container>
+          <Title>
+            Spline <span>Room</span>
+          </Title>
+        </Container>
+      </Wrapper>
+    </LogoContainer>
   );
 };
 
@@ -39,4 +41,10 @@ const Title = styled(TextStyles.H2)`
   span {
     color: #bebbff;
   }
+`;
+
+const LogoContainer = styled.div`
+  position: absolute;
+  top: 44px;
+  left: 0px;
 `;
