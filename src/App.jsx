@@ -1,7 +1,7 @@
 import Logo from './components/Logo';
 import './styles.css';
 import styled from 'styled-components';
-import * as TextStyles from './utils/TextStyles'
+import * as TextStyles from './utils/TextStyles';
 
 const App = () => {
   return (
@@ -9,6 +9,13 @@ const App = () => {
       <LogoContainer>
         <Logo />
       </LogoContainer>
+      <TextContainer>
+        <Title>3D Room with Game Controls</Title>
+        <Description>
+          Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse events
+          and dark mode state.
+        </Description>
+      </TextContainer>
     </Wrapper>
   );
 };
@@ -28,3 +35,5 @@ const LogoContainer = styled.div`
 const TextContainer = styled.div``;
 
 const Title = styled(TextStyles.H1)``;
+
+const Description = styled.p``;
