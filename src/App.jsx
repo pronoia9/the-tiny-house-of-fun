@@ -10,9 +10,7 @@ import ImageControl from './images/controls.png';
 const App = () => {
   return (
     <Wrapper className='App'>
-
-        <Logo />
-
+      <Logo />
       <Container>
         <TextContainer>
           <Title>3D Room with Game Controls</Title>
@@ -22,9 +20,7 @@ const App = () => {
           </Description>
         </TextContainer>
         <ButtonContainer>
-          <a href={DownloadFile} target='_blank' rel='noreferrer'>
-            <DownloadButton />
-          </a>
+          <DownloadButton file={DownloadFile} />
           <PlayButton />
         </ButtonContainer>
         <GradientLine />
