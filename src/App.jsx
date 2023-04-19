@@ -13,24 +13,26 @@ const App = () => {
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      <TextContainer>
-        <Title>3D Room with Game Controls</Title>
-        <Description>
-          Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse events
-          and dark mode state.
-        </Description>
-      </TextContainer>
-      <ButtonContainer>
-        <a href={DownloadFile} target='_blank' rel='noreferrer'>
-          <DownloadButton />
-        </a>
-        <PlayButton />
-      </ButtonContainer>
-      <GradientLine />
-      <ControlContainer1>
-        <Subtitle>Keyboard Key</Subtitle>
-        <ControlImage src={ImageControl} alt='control-image' />
-      </ControlContainer1>
+      <Container>
+        <TextContainer>
+          <Title>3D Room with Game Controls</Title>
+          <Description>
+            Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse events
+            and dark mode state.
+          </Description>
+        </TextContainer>
+        <ButtonContainer>
+          <a href={DownloadFile} target='_blank' rel='noreferrer'>
+            <DownloadButton />
+          </a>
+          <PlayButton />
+        </ButtonContainer>
+        <GradientLine />
+        <ControlContainer1>
+          <Subtitle>Keyboard Key</Subtitle>
+          <ControlImage src={ImageControl} alt='control-image' />
+        </ControlContainer1>
+      </Container>
     </Wrapper>
   );
 };
@@ -103,4 +105,10 @@ const Subtitle = styled(TextStyles.BodyMain)`
 const ControlImage = styled.img`
   max-width: 326px;
   padding: 14px 0px 0px 56px;
+`;
+
+const ContentWrapper = styled.div``;
+
+const Container = styled.div`
+  position: relative;
 `;
