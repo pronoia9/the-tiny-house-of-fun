@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 import Logo from './components/Logo';
@@ -11,6 +12,8 @@ import DownloadFile from './smart_home_final.spline.zip';
 import ImageControl from './images/controls.png';
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Wrapper className='App'>
       <Logo />
@@ -25,7 +28,7 @@ const App = () => {
           </TextContainer>
           <ButtonContainer>
             <DownloadButton file={DownloadFile} />
-            <PlayButton />
+            <PlayButton onClick={() => setIsOpen(true)} />
           </ButtonContainer>
           <GradientLine />
           <ControlContainer1>
