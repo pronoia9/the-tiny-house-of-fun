@@ -1,7 +1,9 @@
+import styled from 'styled-components';
+
 import Logo from './components/Logo';
 import DownloadButton from './components/DownloadButton';
+import PlayButton from './components/PlayButton';
 import * as TextStyles from './utils/TextStyles';
-import styled from 'styled-components';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         </Description>
       </TextContainer>
       <ButtonContainer>
+        <DownloadButton />
+        <PlayButton />
       </ButtonContainer>
     </Wrapper>
   );
@@ -56,4 +60,4 @@ const Description = styled.p`
   margin: 0;
 `;
 
-const ButtonContainer = () => {}
+const ButtonContainer = styled.div``;
