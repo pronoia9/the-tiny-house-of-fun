@@ -1,11 +1,17 @@
+import { ControlContainer1, ControlContainer2, Subtitle, ControlImage } from '../utils/StyledComponents';
 import ImageControl from '../assets/controls.png';
-import './Controls.css';
 
-const Controls = () => (
-  <div className='controls__container'>
-    <p className='controls__subtitle'>Keyboard Key</p>
-    <img className='controls__image' src={ImageControl} alt='control-image' />
-  </div>
-);
+const Controls = ({ mobile }) =>
+  mobile ? (
+    <ControlContainer2>
+      <Subtitle>Keyboard Key</Subtitle>
+      <ControlImage src={ImageControl} alt='control-image' />
+    </ControlContainer2>
+  ) : (
+    <ControlContainer1>
+      <Subtitle>Keyboard Key</Subtitle>
+      <ControlImage src={ImageControl} alt='control-image' />
+    </ControlContainer1>
+  );
 
 export default Controls;

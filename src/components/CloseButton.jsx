@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import ButtonImage from '../images/close-button.png';
-import CloseIcon from '../images/close-icon.png';
+import ButtonImage from '../assets/close-button.png';
+import CloseIcon from '../assets/close-icon.png';
 
 const CloseButton = (props) => {
   const { isOpen, onClick } = props;
