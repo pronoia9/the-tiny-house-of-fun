@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 
 import { CloseButton, Controls, DownloadButton, Header, Logo, PlayButton, SplineScene } from './components';
 import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
@@ -42,4 +41,5 @@ const App = () => {
     </Wrapper>
   );
 };
+
 export default App;
