@@ -7,7 +7,7 @@ import PlayButton from './components/PlayButton';
 import Header from './components/Header';
 import CloseButton from './components/CloseButton';
 import SplineScene from './components/SplineScene';
-import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer } from './utils/StyledComponents';
+import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
 import DownloadFile from './smart_home_final.spline.zip';
 import ImageControl from './images/controls.png';
 
@@ -38,7 +38,7 @@ const App = () => {
         </Container>
         <SplineContainer isOpen={isOpen}>
           <Header />
-          <CloseButton />
+          <CloseButton isOpen={isOpen} onClick={() => setIsOpen(false)} />
           <SplineScene />
         </SplineContainer>
       </ContentWrapper>
