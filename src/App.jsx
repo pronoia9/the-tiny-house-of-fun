@@ -11,24 +11,26 @@ const App = () => {
   return (
     <Wrapper className='App'>
       <Logo />
-      <Container>
-        <TextContainer>
-          <Title>3D Room with Game Controls</Title>
-          <Description>
-            Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse events
-            and dark mode state.
-          </Description>
-        </TextContainer>
-        <ButtonContainer>
-          <DownloadButton file={DownloadFile} />
-          <PlayButton />
-        </ButtonContainer>
-        <GradientLine />
-        <ControlContainer1>
-          <Subtitle>Keyboard Key</Subtitle>
-          <ControlImage src={ImageControl} alt='control-image' />
-        </ControlContainer1>
-      </Container>
+      <ContentWrapper>
+        <Container>
+          <TextContainer>
+            <Title>3D Room with Game Controls</Title>
+            <Description>
+              Learn how to create a 3D scene in Spline with game interactions like moving, jumping, mouse
+              events and dark mode state.
+            </Description>
+          </TextContainer>
+          <ButtonContainer>
+            <DownloadButton file={DownloadFile} />
+            <PlayButton />
+          </ButtonContainer>
+          <GradientLine />
+          <ControlContainer1>
+            <Subtitle>Keyboard Key</Subtitle>
+            <ControlImage src={ImageControl} alt='control-image' />
+          </ControlContainer1>
+        </Container>
+      </ContentWrapper>
     </Wrapper>
   );
 };
