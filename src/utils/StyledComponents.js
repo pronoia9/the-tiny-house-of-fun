@@ -61,6 +61,14 @@ const ControlContainer1 = styled.div`
    }
 `;
 
+const ControlContainer2 = styled.div`
+  display: none;
+
+  @media (max-width: 1400px) {
+    display: block;
+  }
+`;
+
 const Subtitle = styled(TextStyles.BodyMain)`
   color: rgba(0, 0, 0, 0.6);
   margin-top: 14px;
@@ -128,6 +136,7 @@ export {
   ButtonContainer,
   GradientLine,
   ControlContainer1,
+  ControlContainer2,
   Subtitle,
   ControlImage,
   ContentWrapper,
