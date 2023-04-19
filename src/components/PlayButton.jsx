@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 
-import * as TextStyles from "../TextStyles";
+import * as TextStyles from '../utils/TextStyles';
 
-function PlayButton(props) {
+const PlayButton = (props) => {
   const { onClick } = props;
 
   return (

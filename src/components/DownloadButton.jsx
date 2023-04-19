@@ -1,16 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import * as TextStyles from "../TextStyles";
+import * as TextStyles from '../utils/TextStyles';
 
-function DownloadButton() {
+const DownloadButton = () => {
   return (
     <Wrapper>
       <Circle />
       <Title>Download</Title>
     </Wrapper>
   );
-}
+};
 
 export default DownloadButton;
 
