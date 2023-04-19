@@ -1,5 +1,5 @@
-import ButtonImage from '../images/close-button.png';
-import CloseIcon from '../images/close-icon.png';
+import ButtonImage from '../assets/close-button.png';
+import CloseIcon from '../assets/close-icon.png';
 import './CloseButton.scss';
 
 const CloseButton = ({ isOpen, onClick }) => (

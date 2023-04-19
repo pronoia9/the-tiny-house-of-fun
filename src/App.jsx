@@ -7,8 +7,8 @@ import Header from './components/Header';
 import CloseButton from './components/CloseButton';
 import SplineScene from './components/SplineScene';
 import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, ControlContainer2, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
+import ImageControl from './assets/controls.png';
 import DownloadFile from './files/the_tiny_house_of_fun.spline.zip';
-import ImageControl from './images/controls.png';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
