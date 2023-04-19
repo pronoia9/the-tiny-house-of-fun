@@ -1,0 +1,21 @@
+.close-button__wrapper {
+  position: absolute;
+  width: 91px;
+  height: 113px;
+  z-index: 2;
+
+  .close-button__image {
+    width: 91px;
+    height: 113px;
+    margin: 0;
+  }
+
+  .close-button__icon {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    margin: auto;
+    transform: scale(0.5);
+    cursor: pointer;
+  }
+}
