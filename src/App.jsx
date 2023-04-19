@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 
 import Logo from './components/Logo';
 import DownloadButton from './components/DownloadButton';
@@ -8,7 +7,7 @@ import Header from './components/Header';
 import CloseButton from './components/CloseButton';
 import SplineScene from './components/SplineScene';
 import { Wrapper, TextContainer, Title, Description, ButtonContainer, GradientLine, ControlContainer1, ControlContainer2, Subtitle, ControlImage, ContentWrapper, Container, SplineContainer, } from './utils/StyledComponents';
-import DownloadFile from './smart_home_final.spline.zip';
+import DownloadFile from './files/the_tiny_house_of_fun.spline.zip';
 import ImageControl from './images/controls.png';
 
 const App = () => {
