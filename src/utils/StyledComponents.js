@@ -77,13 +77,13 @@ const Container = styled.div`
 `;
 
 const SplineContainer = styled.div`
-  position: relative;
+  position: ${(props) => (props = props.isOpen ? 'fixed' : 'relative')};
   padding: 24px 20px 24px 0px;
 
   .closeButton {
     top: 52%;
     left: -32px;
-  } 
+  }
 `;
 
 export {
