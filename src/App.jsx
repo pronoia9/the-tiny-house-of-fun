@@ -60,4 +60,13 @@ const Description = styled.p`
   margin: 0;
 `;
 
-const ButtonContainer = styled.div``;
+const ButtonContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 20px;
+  background: linear-gradient(270deg, #f1f1f1 12.86%, rgba(255, 255, 255, 0) 83.72%);
+  mix-blend-mode: normal;
+  padding: 40px 0px 40px 56px;
+  margin-top: 53px;
+`;
