@@ -25,6 +25,7 @@ const App = () => {
         </a>
         <PlayButton />
       </ButtonContainer>
+      <GradientLine />
     </Wrapper>
   );
 };
@@ -76,4 +77,10 @@ const ButtonContainer = styled.div`
   a {
     text-decoration: none;
   }
+`;
+
+const GradientLine = styled.div`
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(185deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 50%);
 `;
