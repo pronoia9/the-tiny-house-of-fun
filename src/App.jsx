@@ -32,8 +32,24 @@ const LogoContainer = styled.div`
   left: 0px;
 `;
 
-const TextContainer = styled.div``;
+const TextContainer = styled.div`
+  display: grid;
+  gap: 24px;
+  max-width: 460px;
+  padding: 225px 0px 0px 56px;
+`;
 
 const Title = styled(TextStyles.H1)``;
 
-const Description = styled.p``;
+const Description = styled.p`
+  max-width: 360px;
+  text-align: left;
+  font-family: 'Inter', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+`;
