@@ -64,7 +64,13 @@ const ControlImage = styled.img`
   padding: 14px 0px 0px 56px;
 `;
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+  display: grid;
+  grid-template-columns: auto 855px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+`;
 
 const Container = styled.div`
   position: relative;
